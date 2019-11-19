@@ -42,8 +42,7 @@ version: 2016-08-16
 <ins>GO TO:</ins> File → Properties → C/C++ Build
 - (2.1) set Configuration to '[All configurations]'
 
-![GitHub Logo](/images/all_configs.png)
-Format: ![Alt Text](url)
+![Example](/images/all_configs.png)
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
 
