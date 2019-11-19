@@ -40,9 +40,7 @@ version: 2016-08-16
 **Step 2: Change Eclipse-Project-Configurations**<br/>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build
-- (2.1) set Configuration to '[All configurations]'
-
-![Example](/images/all_configs.png)
+- (2.1) set Configuration to '[All configurations]' ![Example](/images/all_configs.PNG)
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
 
