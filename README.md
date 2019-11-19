@@ -46,6 +46,10 @@ version: 2016-08-16
 ![Example](/images/all_configs.PNG)
 </td></tr></table>
 
+<table><tr><td>
+    <img src="/images/all_configs.PNG" />
+</td></tr></table>
+
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
 
 
