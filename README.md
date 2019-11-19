@@ -42,8 +42,8 @@ version: 2016-08-16
 
 - (1) Dialect: ISO C++11 (-std=c++0x)
 - (2) Preprocessor: -D __cplusplus=201103L
-- (3) include paths (-l):	-> /usr/include/eigen3
-				-> /usr/local/include/libcmaes
+- (3) include paths (-l):	-> /usr/include/eigen3<br/>
+				-> /usr/local/include/libcmaes<br/>
 				-> "${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
 - (4) Miscellaneous - other flags: add -fopenmp
 
