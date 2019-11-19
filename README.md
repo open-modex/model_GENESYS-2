@@ -42,9 +42,9 @@ version: 2016-08-16
 <ins>GO TO:</ins> File → Properties → C/C++ Build
 - (2.1) set Configuration to '[All configurations]' 
 
-<kbd>
-	![Example](/images/all_configs.PNG)
-</kbd>
+<table><tr><td>
+![Example](/images/all_configs.PNG)
+</td></tr></table>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
 
