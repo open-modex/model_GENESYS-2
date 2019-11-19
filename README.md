@@ -30,12 +30,15 @@ Genesys v2.0 is running solely on Linux based machines (see dependencies above).
 Necessary library configuration for Genesys v2.0
 version: 2016-08-16
 
-** All instructions refer to the usage of Eclipse Oxigen as development environment **
+**All instructions refer to the usage of Eclipse Oxigen as development environment**
+**STEP 1**
 - (1) checkout as new general project
 - (2) convert to c++ project (Executable, Linux GCC)
 
+**Step 2**
 (Eclipse Project)-Configurations: 
--> GO TO: C/C++ Build -> Settings -> GCC C++ COMPILER
+*GO TO: C/C++ Build -> Settings -> GCC C++ COMPILER*
+
 - (1) Dialect: ISO C++11 (-std=c++0x)
 - (2) Preprocessor: -D __cplusplus=201103L
 - (3) include paths (-l):	-> /usr/include/eigen3
@@ -43,7 +46,8 @@ version: 2016-08-16
 				-> "${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
 - (4) Miscellaneous - other flags: add -fopenmp
 
--> GO TO: C/C++ Build -> Settings -> GCC C++ LINKER
+*GO TO: C/C++ Build -> Settings -> GCC C++ LINKER*
+
 - (1) libraries (-l): 			cmaes
 - (2) library search path (-L): 	/usr/local/lib
 - (3) Miscellaneous - linker flags: 	add -fopenmp
