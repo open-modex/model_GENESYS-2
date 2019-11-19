@@ -7,7 +7,7 @@ GENESYS v2 is based on the ideas and experience from a prior research project (G
 
 GENESYS v2 is implemented by RWTH Aachen University within a collaboration of the Institute for Power Generation and Storage Systems (PGS/ISEA) and the Institute of Power Systems and Power Economics (IAEW).
 
-`Learn more <http://www.genesys.rwth-aachen.de>`
+Learn more: http://www.genesys.rwth-aachen.de
 
 # Dependencies
 
