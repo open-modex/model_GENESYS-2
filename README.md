@@ -27,7 +27,7 @@ The project GENESYS is funded by the German Ministry for Economic Affairs and En
 # Installation Guide
 Genesys v2.0 is running solely on Linux based machines (see dependencies above). To be able to run the programm stick to the instructions below:
 
-Necessary library configuration for Genesys v2.0
+Necessary library configuration for Genesys v2.0  
 version: 2016-08-16
 
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
