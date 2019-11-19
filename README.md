@@ -1,7 +1,7 @@
 # GENESYS v2.0 - European Power System Model & Transformation Optimisation
 ========================
 
-GENESYS v2 is an optimisation tool for the optimisation of the transformation and operation of the European Power System. It is implemented using the CMA-ES Optimiser {(1) Nikolaus Hansen et.al.}, with the implementation of libcmaes by {(2)Emmanuel Benazera}
+GENESYS v2 is an optimisation tool for the optimisation of the transformation and operation of the European Power System. It is implemented using the CMA-ES Optimiser [(1) Nikolaus Hansen et.al.], with the implementation of libcmaes by [(2)Emmanuel Benazera]
 
 GENESYS v2 is based on the ideas and experience from a prior research project (GENESYS v1) which aimed at the study of possible realisation of a fully renewable power system for EUMENA.
 
