@@ -38,7 +38,7 @@ version: 2016-08-16
 - (3) Check if all required libraries are installed (see dependencies above)
 
 **Step 2: Change Eclipse-Project-Configurations**<br/>
-► GO TO: C/C++ Build -> Settings -> GCC C++ COMPILER*
+→ <u>GO TO:<u> C/C++ Build -> Settings -> GCC C++ COMPILER*
 
 - (1) Dialect: ISO C++11 (-std=c++0x)
 - (2) Preprocessor: -D __cplusplus=201103L
