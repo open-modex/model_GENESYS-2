@@ -27,7 +27,7 @@ The project GENESYS is funded by the German Ministry for Economic Affairs and En
 # Installation Guide
 Genesys v2.0 is running solely on Linux based machines (see dependencies above). To be able to run the programm stick to the instructions below:
 
-Necessary library configuration for Genesys v2.0  
+Necessary library configuration for Genesys v2.0<br/>
 version: 2016-08-16
 
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
@@ -37,7 +37,7 @@ version: 2016-08-16
 - (2) Convert the project to a c++ project (Executable, Linux GCC)
 - (3) Check if all required libraries are installed (see dependencies above)
 
-**Step 2: Change Eclipse-Project-Configurations**
+**Step 2: Change Eclipse-Project-Configurations**<br/>
 *GO TO: C/C++ Build -> Settings -> GCC C++ COMPILER*
 
 - (1) Dialect: ISO C++11 (-std=c++0x)
