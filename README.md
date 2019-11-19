@@ -1,7 +1,4 @@
-<table><tr><td>
-    <img src="/images/banner.png" />
-</td></tr></table>
-<br/>
+<img src="/images/banner.png" />
 <br/>
 
 # GENESYS v2.0 - European Power System Model & Transformation Optimisation
