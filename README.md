@@ -33,25 +33,25 @@ version: 2016-08-16
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
 
 **STEP 1: Download Code and import it into Eclipse**
-- (1) Checkout the code as new general project
-- (2) Convert the project to a c++ project (Executable, Linux GCC)
-- (3) Check if all required libraries are installed (see dependencies above)
+- (1.1) Checkout the code as new general project
+- (1.2) Convert the project to a c++ project (Executable, Linux GCC)
+- (1.3) Check if all required libraries are installed (see dependencies above)
 
 **Step 2: Change Eclipse-Project-Configurations**<br/>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build
-- (1) set Configuration to '[All configurations]'
+- (2.1) set Configuration to '[All configurations]'
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
 
 
 
-- (1) Dialect: ISO C++11 (-std=c++0x)
-- (2) Preprocessor: -D __cplusplus=201103L
-- (3) include paths (-l):	-> /usr/include/eigen3<br/>
+- (2.2) Dialect: ISO C++11 (-std=c++0x)
+- (2.3) Preprocessor: -D __cplusplus=201103L
+- (2.4) include paths (-l):	-> /usr/include/eigen3<br/>
 				-> /usr/local/include/libcmaes<br/>
 				-> "${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
-- (4) Miscellaneous - other flags: add -fopenmp
+- (2.5) Miscellaneous - other flags: add -fopenmp
 
 *GO TO: C/C++ Build -> Settings -> GCC C++ LINKER*
 
