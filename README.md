@@ -46,6 +46,7 @@ version: 2016-08-16
     <img src="/images/all_configs.PNG" />
 </td></tr></table>
 <br/>
+<br/>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ Compiler
 
@@ -55,12 +56,14 @@ version: 2016-08-16
     <img src="/images/dialect.PNG" />
 </td></tr></table>
 <br/>
+<br/>
 
 - (2.3) Preprocessor: -D __cplusplus=201103L
 
 <table><tr><td>
     <img src="/images/preprocessor.PNG" />
 </td></tr></table>
+<br/>
 <br/>
 
 - (2.4) include paths (-l):	-> /usr/include/eigen3<br/>
@@ -71,12 +74,14 @@ version: 2016-08-16
     <img src="/images/includes.PNG" />
 </td></tr></table>
 <br/>
+<br/>
 				
 - (2.5) Miscellaneous - other flags: add -fopenmp
 
 <table><tr><td>
     <img src="/images/miscellaneous_comp.PNG" />
 </td></tr></table>
+<br/>
 <br/>
 
 *GO TO: C/C++ Build -> Settings -> GCC C++ LINKER*
@@ -88,10 +93,12 @@ version: 2016-08-16
     <img src="/images/libraries.PNG" />
 </td></tr></table>
 <br/>
+<br/>
 
 - (3) Miscellaneous - linker flags: 	add -fopenmp
 
 <table><tr><td>
     <img src="/images/miscellaneous_link.PNG" />
 </td></tr></table>
+<br/>
 <br/>
