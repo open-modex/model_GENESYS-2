@@ -39,7 +39,12 @@ version: 2016-08-16
 
 **Step 2: Change Eclipse-Project-Configurations**<br/>
 
-<ins>GO TO:</ins> → C/C++ Build → Settings → GCC C++ COMPILER
+<ins>GO TO:</ins> File → Properties → C/C++ Build
+- (1) set Configuration to '[All configurations]'
+
+<ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
+
+
 
 - (1) Dialect: ISO C++11 (-std=c++0x)
 - (2) Preprocessor: -D __cplusplus=201103L
