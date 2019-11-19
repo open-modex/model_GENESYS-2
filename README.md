@@ -48,17 +48,43 @@ version: 2016-08-16
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
 
-
-
 - (2.2) Dialect: ISO C++11 (-std=c++0x)
+
+<table><tr><td>
+    <img src="/images/dialect.PNG" />
+</td></tr></table>
+
 - (2.3) Preprocessor: -D __cplusplus=201103L
+
+<table><tr><td>
+    <img src="/images/preprocessor.PNG" />
+</td></tr></table>
+
 - (2.4) include paths (-l):	-> /usr/include/eigen3<br/>
 				-> /usr/local/include/libcmaes<br/>
 				-> "${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
+				
+<table><tr><td>
+    <img src="/images/includes.PNG" />
+</td></tr></table>
+				
 - (2.5) Miscellaneous - other flags: add -fopenmp
+
+<table><tr><td>
+    <img src="/images/miscellaneous_comp.PNG" />
+</td></tr></table>
 
 *GO TO: C/C++ Build -> Settings -> GCC C++ LINKER*
 
 - (1) libraries (-l): 			cmaes
 - (2) library search path (-L): 	/usr/local/lib
+
+<table><tr><td>
+    <img src="/images/libraries.PNG" />
+</td></tr></table>
+
 - (3) Miscellaneous - linker flags: 	add -fopenmp
+
+<table><tr><td>
+    <img src="/images/miscellaneous_link.PNG" />
+</td></tr></table>
