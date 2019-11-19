@@ -25,4 +25,33 @@ The project GENESYS is funded by the German Ministry for Economic Affairs and En
 
 
 # Installation Guide
+Necessary library configuration for the genesys2
+version: 2016-08-16
+editor: pst
 
+checkout as new general project
+convert to c++ project (Executable, Linux GCC)
+
+(Eclipse Project) Configuration 
+
+
+C/C++ Build -> Settings -> GCC C++ COMPILER
+
+Dialect:
+	ISO C++11 (-std=c++0x)
+Preprocessor: -D
+	__cplusplus=201103L
+include paths (-l)
+	/usr/include/eigen3
+	/usr/local/include/libcmaes
+	"${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
+Miscellaneous
+	other flags: add -fopenmp
+
+C/C++ Build -> Settings -> GCC C++ LINKER
+libraries (-l)
+	cmaes
+library search path (-L)
+	/usr/local/lib
+Miscellaneous
+	linker flags: add -fopenmp
