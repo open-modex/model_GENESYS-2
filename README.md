@@ -43,7 +43,7 @@ version: 2016-08-16
 - (2.1) set Configuration to '[All configurations]' 
 
 <kbd>
-![Example](/images/all_configs.PNG)
+	![Example](/images/all_configs.PNG)
 </kbd>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ COMPILER
