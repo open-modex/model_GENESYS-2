@@ -32,12 +32,12 @@ version: 2016-08-16
 
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
 
-**STEP 1**
-- (1) checkout as new general project
-- (2) convert to c++ project (Executable, Linux GCC)
+**STEP 1: Download Code and import it into Eclipse**
+- (1) Checkout the code as new general project
+- (2) Convert the project to a c++ project (Executable, Linux GCC)
+- (3) Check if all required libraries are installed (see dependencies above)
 
-**Step 2**
-(Eclipse Project)-Configurations: 
+**Step 2: Change Eclipse-Project-Configurations**
 *GO TO: C/C++ Build -> Settings -> GCC C++ COMPILER*
 
 - (1) Dialect: ISO C++11 (-std=c++0x)
