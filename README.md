@@ -36,17 +36,17 @@ version: 2016-08-16
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
 
 **STEP 0: Setup OS (Centos7)**
-- Install epel repository : ``` sudo yum install -y epel-release ```
-- Install eigen3 lib : "sudo yum install -y eigen3-devel
-- Clone libcmaes :"git clone https://github.com/beniz/libcmaes.git
-	Follow setup instructions in README.MD:
-	./autogen.sh
-	echo "#define CMAES_EXPORT" > cmaes_export.h
-	./configure
-	make
-	(the compilation takes some time!)
-	agree to install in standard directory
-	sudo make install
+- Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
+- Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
+- Clone libcmaes :"git clone https://github.com/beniz/libcmaes.git <br/>
+	Follow setup instructions in README.MD: <br/>
+	./autogen.sh <br/>
+	echo "#define CMAES_EXPORT" > cmaes_export.h <br/>
+	./configure <br/>
+	make <br/>
+	(the compilation takes some time!) <br/>
+	agree to install in standard directory <br/>
+	sudo make install <br/>
 
 
 **STEP 1: Download Code and import it into Eclipse**
