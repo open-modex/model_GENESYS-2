@@ -119,3 +119,33 @@ version: 2016-08-16
 </td></tr></table>
 <br/>
 <br/>
+
+
+**Step 3: Change Eclipse-Project-Configurations**<br/>
+
+<table><tr><td>
+    <img src="/images/config genesys analysis.PNG" />
+</td></tr></table>
+<br/>
+<br/>
+
+<table><tr><td>
+    <img src="/images/config genesys analysis arguments.PNG" />
+</td></tr></table>
+<br/>
+<br/>
+
+<table><tr><td>
+    <img src="/images/config genesys optimise.PNG" />
+</td></tr></table>
+<br/>
+<br/>
+
+<table><tr><td>
+    <img src="/images/config genesys optimise arguments.PNG" />
+</td></tr></table>
+<br/>
+<br/>
+
+
+
