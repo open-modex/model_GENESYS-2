@@ -45,6 +45,8 @@ version: 2016-08-16
 	./configure
 	make
 	(the compilation takes some time!)
+	agree to install in standard directory
+	sudo make install
 
 
 **STEP 1: Download Code and import it into Eclipse**
