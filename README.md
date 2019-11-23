@@ -47,6 +47,9 @@ version: 2016-08-16
 	(the compilation takes some time!) <br/>
 	agree to install in standard directory <br/>
 	sudo make install <br/>
+	
+	helpful linux commands within the installation:
+	chmod 777 file	(grant access to file for all users and groups)
 
 
 **STEP 1: Download Code and import it into Eclipse**
