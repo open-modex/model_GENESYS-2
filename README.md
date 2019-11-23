@@ -49,7 +49,7 @@ version: 2016-08-16
 	sudo make install <br/>
 	
 	helpful linux commands within the installation:
-	chmod 777 file	(grant access to file for all users and groups)
+	chmod -R 777 file	(grant recursive access to file for all users and groups)
 
 
 **STEP 1: Download Code and import it into Eclipse**
