@@ -1,0 +1,6 @@
+Optimiser: (C++11)
+https://github.com/beniz/libcmaes
+
+Dependency of libcmaes: eigen3 (check your distribution packages)
+http://eigen.tuxfamily.org/index.php?title=Main_Page
+
