@@ -70,8 +70,8 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 - (2.2) Checkout the submodule genesys2 as new general project in Eclipse via the Git-Symbol in the upper right corner
 - (2.3) Convert the project to a c++ project (Executable, Linux GCC) by right clicking on the project in the project explorer
 
-**Step 3: Set Eclipse-Project-Configurations**<br/>
 
+**Step 3: Set Eclipse-Project-Configurations**<br/>
 <ins>GO TO:</ins> File → Properties → C/C++ Build
 - (3.1) set Configuration to '[All configurations]' 
 
@@ -168,4 +168,9 @@ library search path (-L): /usr/local/lib
 <br/>
 
 
+# Debugging
+
+**Possible Problems while running the Program**<br/>
+
+- Input files need to be in LF-Line-ending format, otherwise "\r" will be read in as string in Linux. Either the files are generated in Linux in the first place or need to be converted when from Windoes with "Atom" for example in the task menu at the bottom of the program
 
