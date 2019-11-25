@@ -146,6 +146,7 @@ library search path (-L): /usr/local/lib
 <br/>
 
 - (4.3) Enter '--mode=analysis -j=1' in the Arguments-tab of the analysis application
+- (4.4) Important: set the working directory to the Debug-folder location in your project as marked in red below!
 <table><tr><td>
     <img src="/images/config genesys analysis arguments neu.PNG" />
 </td></tr></table>
