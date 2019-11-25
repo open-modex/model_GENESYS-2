@@ -66,7 +66,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 
 
 **STEP 2: Download Genesys-Code and import it into Eclipse**
-- (2.1) Clone repository from GitHub: ```(sudo) clone https://github.com/open-modex/model_GENESYS-2.git```
+- (2.1) Clone repository from GitHub: ```git clone https://github.com/open-modex/model_GENESYS-2.git```
 - (2.2) Checkout the submodule genesys2 as new general project in Eclipse via the Git-Symbol in the upper right corner
 - (2.3) Convert the project to a c++ project (Executable, Linux GCC) by right clicking on the project in the project explorer
 
