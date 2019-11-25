@@ -40,7 +40,7 @@ version: 2016-08-16
 - (0.2) Download a Centos7 distribution eg: ```CentOS-7-x86_64-DVD-1908.iso``` 
 http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/> 
 - (0.3) Add the distribution to the virtual box clicking on 'New' (Neu) and setting the Version to Red Hat (64-Bit) <br/>
-- (0.4) follow further instructions to finally set up the machine. In the end it should look similar nas shown below in the screenshot<br/>
+- (0.4) Follow further instructions to finally set up the machine. In the end it should look similar as shown below in the screenshot<br/>
 <table><tr><td>
     <img src="/images/virtual box.PNG" />
 </td></tr></table>
