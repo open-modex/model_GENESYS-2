@@ -49,9 +49,9 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 
 
 **STEP 1: Install Libraries/Dependencies** <br/>
-- (1.0) Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
-- (1.1) Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
-- (1.2) Clone libcmaes : ```git clone https://github.com/beniz/libcmaes.git``` <br/>
+- (1.1) Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
+- (1.2) Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
+- (1.3) Clone libcmaes : ```git clone https://github.com/beniz/libcmaes.git``` <br/>
 	Follow setup instructions in README.MD: <br/>
 	```./autogen.sh``` <br/>
 	```echo "#define CMAES_EXPORT" > cmaes_export.h``` <br/>
@@ -116,7 +116,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 <br/>
 
-*GO TO: C/C++ Build -> Settings -> GCC C++ LINKER*
+*GO TO: C/C++ Build → Settings → GCC C++ LINKER*
 libraries (-l): cmaes
 library search path (-L): /usr/local/lib
 
@@ -137,18 +137,22 @@ library search path (-L): /usr/local/lib
 
 **Step 4: Change Eclipse-Project-Configurations**<br/>
 
+- (4.1) Open window *Run → Run Configurations* and create 2 new C/C++ Applications in the panel on the left side for 'analysis' and 'optimisation'
+- (4.2) Fill in Spaces for name, project and C/C++ Application for the 'Main'-tab of the analysis application
 <table><tr><td>
     <img src="/images/config genesys analysis.PNG" />
 </td></tr></table>
 <br/>
 <br/>
 
+- (4.3) Enter '--mode=analysis -j=1' in the Arguments-tab of the analysis application
 <table><tr><td>
     <img src="/images/config genesys analysis arguments neu.PNG" />
 </td></tr></table>
 <br/>
 <br/>
 
+- (4.4) Repeat all upper steps for the optimisation application as shown below in the screenshots
 <table><tr><td>
     <img src="/images/config genesys optimise.PNG" />
 </td></tr></table>
