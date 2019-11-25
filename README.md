@@ -47,7 +47,7 @@ version: 2016-08-16
 	(the compilation takes some time!) <br/>
 	agree to install in standard directory <br/>
 	sudo make install <br/>
-	add file to shared library path: ``` ldconfig /usr/local/lib ```
+	add libraries to shared library path: ``` ldconfig /usr/local/lib ```
 	
 	helpful linux commands within the installation:
 	chmod -R 777 file	(grant recursive access to file for all users and groups)
