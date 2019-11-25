@@ -75,7 +75,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ Compiler
-- (3.2) Dialect: → ISO C++11 (-std=c++0x)
+- (3.2) Dialect: ISO C++11 (-std=c++0x)
 
 <table><tr><td>
     <img src="/images/dialect.PNG" />
@@ -83,7 +83,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 <br/>
 
-- (3.3) Preprocessor:-D __cplusplus=201103L
+- (3.3) Preprocessor(-D): __cplusplus=201103L
 
 <table><tr><td>
     <img src="/images/preprocessor.PNG" />
@@ -91,10 +91,10 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 <br/>
 
-- (3.4) include paths (-l):	
-→ /usr/include/eigen3<br/>
-→ /usr/local/include/libcmaes<br/>
-→ "${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
+- (3.4) include paths (-l):<br/>
+/usr/include/eigen3<br/>
+/usr/local/include/libcmaes<br/>
+"${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
 				
 <table><tr><td>
     <img src="/images/includes.PNG" />
@@ -102,7 +102,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 <br/>
 				
-- (2.5) Miscellaneous - other flags: add -fopenmp
+- (2.5) Miscellaneous - other flags: add '-fopenmp'
 
 <table><tr><td>
     <img src="/images/miscellaneous_comp.PNG" />
@@ -111,9 +111,8 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 
 *GO TO: C/C++ Build -> Settings -> GCC C++ LINKER*
-
-- (1) libraries (-l): 			cmaes
-- (2) library search path (-L): 	/usr/local/lib
+libraries (-l): cmaes
+library search path (-L): /usr/local/lib
 
 <table><tr><td>
     <img src="/images/libraries.PNG" />
@@ -121,7 +120,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 <br/>
 
-- (3) Miscellaneous - linker flags: 	add -fopenmp
+- (3) Miscellaneous - linker flags: add '-fopenmp'
 
 <table><tr><td>
     <img src="/images/miscellaneous_link.PNG" />
