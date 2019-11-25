@@ -36,37 +36,37 @@ version: 2016-08-16
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
 
 **STEP 0: Only for Windows users: Install a virtual box with Centos7**<br/>
-- Download/ Install Oracle VM VirtualBox for Windows: VirtualBox-6.0.14-133895-Win https://download.virtualbox.org/virtualbox/6.0.14/ <br/>
-- Download a Centos7 distribution eg: CentOS-7-x86_64-DVD-1908.iso http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
-- Add the distribution to the virtual box clicking on 'New' (Neu) and setting the Version to Red Hat (64-Bit) <br/>
-- follow further instructions to finally set up the machine<br/>
+- (0.1) Download/ Install Oracle VM VirtualBox for Windows: ```VirtualBox-6.0.14-133895-Win```  https://download.virtualbox.org/virtualbox/6.0.14/ <br/>
+- (0.2) Download a Centos7 distribution eg: ```CentOS-7-x86_64-DVD-1908.iso``` 
+http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/> 
+- (0.3) Add the distribution to the virtual box clicking on 'New' (Neu) and setting the Version to Red Hat (64-Bit) <br/>
+- (0.4) follow further instructions to finally set up the machine<br/>
 
-- Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
-- Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
-- Clone libcmaes :"git clone https://github.com/beniz/libcmaes.git <br/>
+**STEP 1: Install Libraries/Dependencies** <br/>
+- (1.0) Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
+- (1.1) Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
+- (1.2) Clone libcmaes : ```git clone https://github.com/beniz/libcmaes.git``` <br/>
 	Follow setup instructions in README.MD: <br/>
-	./autogen.sh <br/>
-	echo "#define CMAES_EXPORT" > cmaes_export.h <br/>
-	./configure <br/>
-	make <br/>
-	(the compilation takes some time!) <br/>
-	agree to install in standard directory <br/>
-	sudo make install <br/>
+	```./autogen.sh``` <br/>
+	```echo "#define CMAES_EXPORT" > cmaes_export.h``` <br/>
+	```./configure``` <br/>
+	```make``` (the compilation takes some time!) -> agree to install in standard directory <br/>
+	```sudo make install``` <br/>
 	add libraries to shared library path: ``` ldconfig /usr/local/lib ```
 	
-	helpful linux commands within the installation:
-	chmod -R 777 file	(grant recursive access to file for all users and groups)
+	helpful linux commands within the installation:<br/>
+	```chmod -R 777 file```	(grant recursive access to file for all users and groups)
 
 
-**STEP 1: Download Code and import it into Eclipse**
-- (1.1) Checkout the code as new general project
-- (1.2) Convert the project to a c++ project (Executable, Linux GCC)
-- (1.3) Check if all required libraries are installed (see dependencies above)
+**STEP 2: Download Code and import it into Eclipse**
+- (2.1) Checkout the code as new general project
+- (2.2) Convert the project to a c++ project (Executable, Linux GCC)
+- (2.3) Check if all required libraries are installed (see dependencies above)
 
-**Step 2: Change Eclipse-Project-Configurations**<br/>
+**Step 3: Change Eclipse-Project-Configurations**<br/>
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build
-- (2.1) set Configuration to '[All configurations]' 
+- (3.1) set Configuration to '[All configurations]' 
 
 <table><tr><td>
     <img src="/images/all_configs.PNG" />
@@ -76,7 +76,7 @@ version: 2016-08-16
 
 <ins>GO TO:</ins> File → Properties → C/C++ Build → Settings → GCC C++ Compiler
 
-- (2.2) Dialect: ISO C++11 (-std=c++0x)
+- (3.2) Dialect: ISO C++11 (-std=c++0x)
 
 <table><tr><td>
     <img src="/images/dialect.PNG" />
@@ -84,7 +84,7 @@ version: 2016-08-16
 <br/>
 <br/>
 
-- (2.3) Preprocessor: -D __cplusplus=201103L
+- (3.3) Preprocessor: -D __cplusplus=201103L
 
 <table><tr><td>
     <img src="/images/preprocessor.PNG" />
@@ -92,7 +92,7 @@ version: 2016-08-16
 <br/>
 <br/>
 
-- (2.4) include paths (-l):	-> /usr/include/eigen3<br/>
+- (3.4) include paths (-l):	-> /usr/include/eigen3<br/>
 				-> /usr/local/include/libcmaes<br/>
 				-> "${workspace_loc:/genesys_2/}" (or "${workspace_loc:/${ProjName}}")
 				
@@ -130,7 +130,7 @@ version: 2016-08-16
 <br/>
 
 
-**Step 3: Change Eclipse-Project-Configurations**<br/>
+**Step 4: Change Eclipse-Project-Configurations**<br/>
 
 <table><tr><td>
     <img src="/images/config genesys analysis.PNG" />
