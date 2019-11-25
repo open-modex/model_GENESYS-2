@@ -37,7 +37,7 @@ version: 2016-08-16
 
 **STEP 0: Only for Windows users: Install a virtual box with Centos7**<br/>
 - Download/ Install Oracle VM VirtualBox for Windows: VirtualBox-6.0.14-133895-Win https://download.virtualbox.org/virtualbox/6.0.14/ <br/>
-- Download a Centos7 distribution eg:<br/>
+- Download a Centos7 distribution eg: CentOS-7-x86_64-DVD-1908.iso http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 - Add the distribution to the virtual box clicking on 'New' (Neu) and setting the Version to Red Hat (64-Bit) <br/>
 - follow further instructions to finally set up the machine<br/>
 
