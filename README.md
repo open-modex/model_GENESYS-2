@@ -35,7 +35,12 @@ version: 2016-08-16
 
 **All instructions refer to the usage of Eclipse Oxigen as development environment**
 
-**STEP 0: Setup OS (Centos7)**
+**STEP 0: Only for Windows users: Install a virtual box with Centos7**<br/>
+- Download/ Install Oracle VM VirtualBox for Windows: VirtualBox-6.0.14-133895-Win https://download.virtualbox.org/virtualbox/6.0.14/ <br/>
+- Download a Centos7 distribution eg:<br/>
+- Add the distribution to the virtual box clicking on 'New' (Neu) and setting the Version to Red Hat (64-Bit) <br/>
+- follow further instructions to finally set up the machine<br/>
+
 - Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
 - Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
 - Clone libcmaes :"git clone https://github.com/beniz/libcmaes.git <br/>
