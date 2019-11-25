@@ -41,6 +41,12 @@ version: 2016-08-16
 http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/> 
 - (0.3) Add the distribution to the virtual box clicking on 'New' (Neu) and setting the Version to Red Hat (64-Bit) <br/>
 - (0.4) follow further instructions to finally set up the machine<br/>
+<table><tr><td>
+    <img src="/images/virtual box.PNG" />
+</td></tr></table>
+<br/>
+<br/>
+
 
 **STEP 1: Install Libraries/Dependencies** <br/>
 - (1.0) Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
