@@ -51,7 +51,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 **STEP 1: Install libraries/dependencies/development software in Centos7** <br/>
 - (1.1) Download/install eclipse oxigen for C/C++ development: https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-09/R/eclipse-cpp-2019-09-R-linux-gtk-x86_64.tar.gz
 - (1.2) Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
-- (1.3) Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
+- (1.3) Install eigen3 lib : ```sudo yum install -y eigen3-devel``` <br/>
 - (1.4) Clone libcmaes : ```git clone https://github.com/beniz/libcmaes.git``` <br/>
 	Follow setup instructions in README.MD: <br/>
 	```./autogen.sh``` <br/>
