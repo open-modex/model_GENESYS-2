@@ -134,7 +134,7 @@ version: 2016-08-16
 <br/>
 
 <table><tr><td>
-    <img src="/images/config genesys analysis arguments.PNG" />
+    <img src="/images/config genesys analysis arguments neu.PNG" />
 </td></tr></table>
 <br/>
 <br/>
@@ -146,7 +146,7 @@ version: 2016-08-16
 <br/>
 
 <table><tr><td>
-    <img src="/images/config genesys optimise arguments.PNG" />
+    <img src="/images/config genesys optimise arguments neu.PNG" />
 </td></tr></table>
 <br/>
 <br/>
