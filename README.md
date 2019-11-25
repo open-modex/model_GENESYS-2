@@ -48,7 +48,7 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 <br/>
 
 
-**STEP 1: Install Libraries/Dependencies** <br/>
+**STEP 1: Install Libraries/Dependencies in Centos7** <br/>
 - (1.1) Install epel repository : ``` sudo yum install -y epel-release ``` <br/>
 - (1.2) Install eigen3 lib : "sudo yum install -y eigen3-devel <br/>
 - (1.3) Clone libcmaes : ```git clone https://github.com/beniz/libcmaes.git``` <br/>
@@ -64,10 +64,11 @@ http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos/7.7.1908/isos/x86_64/<br/>
 	```chmod -R 777 file```	(grant recursive access to file for all users and groups)
 
 
-**STEP 2: Download Code and import it into Eclipse**
-- (2.1) Checkout the code as new general project
-- (2.2) Convert the project to a c++ project (Executable, Linux GCC)
-- (2.3) Check if all required libraries are installed (see dependencies above)
+**STEP 2: Download Genesys-Code and import it into Eclipse**
+- (2.1) Clone repository from GitHub: ```(sudo) clone https://github.com/open-modex/model_GENESYS-2.git```
+- (2.2) Checkout the code as new general project
+- (2.3) Convert the project to a c++ project (Executable, Linux GCC)
+- (2.4) Check if all required libraries are installed (see dependencies above)
 
 **Step 3: Set Eclipse-Project-Configurations**<br/>
 
