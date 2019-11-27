@@ -1,0 +1,47 @@
+/*general settings*/
+optimisation_algorithm = cma-es
+simulation_start = 2020-01-01_00:00
+simulation_end = 2025-12-31_23:59
+interest_rate = 0.07
+use_randomisation = yes
+/*settings for the cma-es optimiser */
+cma_lambda = -1 /* offsprings per generation | -1 equals auto */
+cma_max_iter = 4000 /* number of calls to algorithm | generations */
+cma_max_fevals = 210000 /* max number of individuals */
+cma_init_sigma = 3
+cma_ftarget = 2e4 /* value for fitness target, optimisation ends when reached*/
+cma_writeResult_after_niter = 100 /*an updated InstallationList Result is alwasy saved to hard disk after niter generations*/
+cma_weight_target_year = 1 /* weighting factor by which the cost of last year are multiplied*/
+cma_weight_target_duration_years = 1 /* target year weighting by an average of the last x years */
+installation_interval = 1a
+/*penaltiy settigns to influence optimser*/
+penalty_unsupplied_load = 8e6	/* blackouts are critical and economically very expensive */
+penalty_self_supply_quota = 5e12
+penalty_SQ_lower_limit = 0.7
+penalty_SQ_upper_limit = 1.3
+penalty_unsupplied_heat = 8e6
+/*penalty_self_supply_quota = 0 /* 20000000 */
+/*penalty_co2_exceed_emission = 0 /* 50000000 */
+/*penalty_energy_cut = 0
+/*scenario construction parameters*/
+use_global_file= no
+/* variables for operation simulation */
+operation_algorithm = hsm_total_cost_min
+energy2power_ratio = 1h
+operation_sequence_duration = 100a
+simulation_step_length = 1h
+/*test also 15min */
+/*consider_dsm = no
+/*max_co2_emission_annual = 0 /*mio t/a*/
+/*transmission settings*/
+gridbalance_hop_level = 0
+grid_exchange_ratio = 1
+consider_transmission_loss = yes
+consider_electrical_DC_network = yes
+module_grid_expansion_costs = no
+module_heat = no
+/*consider_electrical_AC_network = no
+/*consider_hgas_network = no
+/*consider_ngas_network = no
+/*----------analysis_hsm settings--------------*/
+analysis_hsm_output_detail = yes

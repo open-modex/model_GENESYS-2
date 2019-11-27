@@ -1,0 +1,120 @@
+ The new GENESYS-2 Framework by RWTH-Aachen University 
+ Contact us via genesys(a)isea.rwth-aachen.de
+ Version 1.5.0 build 0 compiled on Sep 30 2019
+ ----------------------------------------------------------------------------------------
+ This software is licensed under GNU Lesser General Public License.
+ For details please consult our website: http://www.genesys.rwth-aachen.de
+ ----------------------------------------------------------------------------------------
+Let's Go!
+
+
+
+4 cmd-arguments given.
+sValue = 1
+threads_ = 1
+======CmdParameters::PrintAll===============
+Current setup: 
+program_settings_file_ = ProgramSettings.dat
+mode_ = analysis
+input_filename_ = InstallationListResult.csv
+output_filename_ = AnalysedResult.xml
+threads_ = 1
+scenario_name_ = om-onenode
+verbose_output_ = 0
+======CmdParameters::PrintAll===============
+
+======ProgramSettings::PrintAll()===============
+Current setup: 
+program_mode_ = evolution
+input_files_folder_ = Input
+results_output_folder_ = Results
+filename_output_dynamic_model_ = DynamicModelOutput.csv
+use_randomisation_ in optim and operation = 1
+----------global optimisation settings--------------
+simulation_start_ = 2020-1-1_0:0
+simulation_end_ = 2025-12-31_23:59
+optimisation_algorithm_ = cma-es
+	cma_deterministic_seed =0
+	cma_lambda_ = -1
+	cma_max_iter_ = 4000
+	cma_max_fevals_ = 210000
+	cma_init_sigma_ = 3
+	cma_ftarget_ = 20000
+	cma_writeFullResult_after_ngenerations_ = 100
+	installation_interval_ = 525600min
+	cma_weight_target_year_ = 1x
+use_global_file_ = 0
+----------operation algorithm settings--------------
+operation_algorithm_ = hsm_total_cost_min
+operation_sequence_duration_ = 52560000min
+future_lookahead_time_ = 0
+interest_rate_ = 7 %
+energy2power_ratio_ = 60min
+simulation_step_length_ = 60min
+gridbalance_hop_level_ = 0 
+	grid_exchange_ratio = 1 * residual-load
+	consider_transmission_loss_ = 1
+	max_co2_emission_annual_ = 0
+----------operation algorithm penalties--------------
+penalty_unsupplied_load_ = 8e+06
+penalty_self_supply_quota_ = 5e+12
+	 lower limit self_supply_quota_ = 0.7
+	 upper limit self_supply_quota_ = 1.3
+----------analysis_hsm settings--------------
+analysis_hsm_output_detail_ = 1
+----------PRINTING MODULES----------
+8 Elements in map
+KEY	                foresight	BOOL	0
+KEY	                  dc_grid	BOOL	1
+KEY	           grid_expansion	BOOL	0
+KEY	                hgas_grid	BOOL	0
+KEY	                  ac_grid	BOOL	0
+KEY	                ngas_grid	BOOL	0
+KEY	                      dsm	BOOL	0
+KEY	                     heat	BOOL	0
+======ProgramSettings::PrintAll()===============
+
+io_routines::CsvInput::CsvInput reading file PrimaryEnergy.csv
+	***INFO: File contains 20 lines total
+io_routines::CsvInput::CsvInput reading file Storage.csv
+	***INFO: File contains 2 lines total
+	***WARNING: File Storage.csv marked as #empty!
+WARNING: no valid blocks found for storage!
+io_routines::CsvInput::CsvInput reading file Converter.csv
+	***INFO: File contains 8 lines total
+io_routines::CsvInput::CsvInput reading file MultiConverter.csv
+	***INFO: File contains 10 lines total
+io_routines::CsvInput::CsvInput reading file TransmissionConverter.csv
+	***INFO: File contains 2 lines total
+	***WARNING: File TransmissionConverter.csv marked as #empty!
+io_routines::CsvInput::CsvInput reading file Region.csv
+	Found /include() external file:
+	open external file= ./regions/Mid.csv
+		 found 14 lines in ./regions/Mid.csv
+	***INFO: File contains 15 lines total
+io_routines::CsvInput::CsvInput reading file ./TimeSeries/Mid_demand_Elec.csv
+	***INFO: File contains 1 lines total
+io_routines::CsvInput::CsvInput reading file ./TimeSeries/Mid_Solar.csv
+	***INFO: File contains 4 lines total
+io_routines::CsvInput::CsvInput reading file ./TimeSeries/PrimaryEnergyUnlimited_minusOne.csv
+	***INFO: File contains 4 lines total
+io_routines::CsvInput::CsvInput reading file ./TimeSeries/PrimaryEnergyUnlimited_minusOne.csv
+	***INFO: File contains 4 lines total
+io_routines::CsvInput::CsvInput reading file Link.csv
+	***INFO: File contains 2 lines total
+	***WARNING: File Link.csv marked as #empty!
+GENESYS-2 running in mode: analysis
+	--->Scenario =om-onenode
+io_routines::CsvInput::CsvInput reading file InstallationListResult.csv
+	***INFO: File contains 2 lines total
+INFO: found empty in InstallationList: #empty
+GENESYS calculating fitness without system optimisation...please wait!
+HSM-by total_cost_minimisation
+capx=1.44354e+10 fopx=3.36826e+08 vopx=          0 cost=1.47722e+10 penUL[%cost]=    5297.04 engyUL[%dem]= 0.00109201 penSQ[%cost]=      54828 dem=2.43369e+06 LCOE[ct/kWh]=    0.51569 fitness=8.88196e+14
+Analysis finished in 1.10789 seconds [Wall Clock]
+Analysis CPU time was: 1.1 sec
+Analysis CPU time was: 1 seconds and 100 milliseconds
+Writing System with fitness 8.88196e+14 to file...StaticAnalysedResult
+XML-Writer opening - Writing Prolog with version:1.0
+	FUNC-ID: XmlWriter::writeToDisk() into file AnalysedResult.xml
+End Main Function!

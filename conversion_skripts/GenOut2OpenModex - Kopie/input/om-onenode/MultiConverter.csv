@@ -1,0 +1,10 @@
+#comment;===============multiconverter-technologies============================================
+#blockwise
+#code;Gas_plant_Mid;#name;Gas_plant_Mid;#input;Gas_Mid
+#output;electric_energy;CO2_Mid
+#conversion;0.6;0.2
+efficiency_new;#type;DVP_linear;#data;2020-01-01_00:00;1
+cost;#type;DVP_linear;#data;2020-01-01_00:00;450000000
+lifetime;#type;DVP_linear;#data;2020-01-01_00:00;30
+OaM_rate;#type;DVP_linear;#data;2020-01-01_00:00;0.013333333333333334
+#endblock
