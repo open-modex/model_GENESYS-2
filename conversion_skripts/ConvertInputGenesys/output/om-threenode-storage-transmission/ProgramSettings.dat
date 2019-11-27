@@ -1,0 +1,13 @@
+/*general settings*/
+optimisation_algorithm=cma-es
+simulation_start=2020-01-01_00:00
+simulation_end=2020-12-31_00:00
+interest_rate=0.07
+use_randomisation=yes
+/*variables for operation simulation*/
+gridbalance_hop_level=0
+operation_algorithm=hsm_total_cost_min
+energy2power_ratio=1h
+operation_sequence_duration=100a
+simulation_step_length=1h
+analysis_hsm_output_detail=yes

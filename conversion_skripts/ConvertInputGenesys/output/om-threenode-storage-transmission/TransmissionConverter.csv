@@ -1,0 +1,26 @@
+#comment;===============Transmission Converters============================================
+#blockwise
+#code;hvac_Mid_North;#name;hvac_Elec;#input;Elec;#output;Elec;#bidirectional;true
+efficiency_new;#type;DVP_linear;#data;2020-01-01_00:00;0.9
+cost;#type;DVP_linear;#data;2020-01-01_00:00;1650000000
+lifetime;#type;DVP_linear;#data;2020-01-01_00:00;40
+OaM_rate;#type;DVP_linear;#data;2020-01-01_00:00;0.01
+length_dep_loss;#type;DVP_linear;#data;2020-01-01_00:00;0
+length_dep_cost;#type;DVP_linear;#data;2020-01-01_00:00;0
+#endblock
+#code;hvac_South_Mid;#name;hvac_Elec;#input;Elec;#output;Elec;#bidirectional;true
+efficiency_new;#type;DVP_linear;#data;2020-01-01_00:00;0.9
+cost;#type;DVP_linear;#data;2020-01-01_00:00;1650000000
+lifetime;#type;DVP_linear;#data;2020-01-01_00:00;40
+OaM_rate;#type;DVP_linear;#data;2020-01-01_00:00;0.01
+length_dep_loss;#type;DVP_linear;#data;2020-01-01_00:00;0
+length_dep_cost;#type;DVP_linear;#data;2020-01-01_00:00;0
+#endblock
+#code;hvac_South_North;#name;hvac_Elec;#input;Elec;#output;Elec;#bidirectional;true
+efficiency_new;#type;DVP_linear;#data;2020-01-01_00:00;0.85
+cost;#type;DVP_linear;#data;2020-01-01_00:00;3000000000
+lifetime;#type;DVP_linear;#data;2020-01-01_00:00;40
+OaM_rate;#type;DVP_linear;#data;2020-01-01_00:00;0.01
+length_dep_loss;#type;DVP_linear;#data;2020-01-01_00:00;0
+length_dep_cost;#type;DVP_linear;#data;2020-01-01_00:00;0
+#endblock
