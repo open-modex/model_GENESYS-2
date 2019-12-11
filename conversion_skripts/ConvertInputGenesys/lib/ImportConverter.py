@@ -79,10 +79,9 @@ def f_import(dfs, scn, path, start_date='2030-01-01_00:00'):
         writer.writerows([['#blockwise']])
 
         for index, row in df_m_input_converter_location.iterrows():
-            # print(row.to_dict())
             dict_converter_location = row.to_dict()
 
-            if dict_converter_location['Process'] != 'Curtailment' and (dict_converter_location['Process'] == 'Photovoltaics' or dict_converter_location['Process'] == 'Wind' or dict_converter_location['Process'] == 'Run of River'):
+            if dict_converter_location['Process'] != 'Curtailment' and dict_converter_location['Process'] in ['Wind', 'Photovoltaics', 'Run of River', 'Wind power plant', 'Solar power plant', 'Hydro power plant']:
                 writer.writerows(f_get_template_converter(dict_converter_location, df_m_input_converter_process.to_dict()))
         if (b_use_storage):
             for index, row in df_m_input_storage.iterrows():
