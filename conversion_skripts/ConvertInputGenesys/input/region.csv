@@ -1,4 +1,0 @@
-#blockwise
-/include(./regions/Mid.csv)
-/include(./regions/South.csv)
-/include(./regions/North.csv)
