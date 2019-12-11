@@ -1,4 +1,0 @@
-#comment;unlimited -1 primary ressource
-base;#type;DVP_const;#data;2020-01-01_00:00;1e15
-value;#type;DVP_linear;#data;2020-01-01_00:00;-1
-#endtable
