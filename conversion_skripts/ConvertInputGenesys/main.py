@@ -13,8 +13,8 @@ l_scenarios = lib.scenario_selector.generate_scenario_list('./input')
 print("Available scenarios in './input/': \n", l_scenarios)
 
 #DEFINE global start and end year for installation and operation
-i_year_start = 2020
-i_year_end = 2020
+i_year_start = 2017
+i_year_end = 2018
 
 if i_year_start>i_year_end:
     print("Error: End year before start year")

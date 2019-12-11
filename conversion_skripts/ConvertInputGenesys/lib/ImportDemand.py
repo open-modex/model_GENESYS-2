@@ -29,7 +29,7 @@ def f_import(*, dfs, scn, path, b_MWh_to_GWh=True):
 
     for col in df_m_input:
         total_demand = df_m_input[col].sum()
-        if not ((df_m_input[col].__len__() -1) == 8760):
+        if not ((df_m_input[col].__len__() -1) == 8783):
             print("ERROR: Assumed length of demand time series is 8760 steps / function not defined for multi-or-sub-annual time-series")
             print("\tFound length: ",df_m_input[col].__len__()  -1)
             sys.exit()
