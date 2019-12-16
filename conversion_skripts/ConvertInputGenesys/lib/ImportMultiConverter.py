@@ -49,14 +49,22 @@ def f_import(scn, path, dfs, start_date='2030-01-01_00:00'):
         list_start = list_start.__add__(str_input)
         # list_start = list_start.__add__(str_output)
         # list_start = list_start.__add__(str_conversion)
+
+        #calculate the operation and maintenance cost
+        try:
+            dict_multiconverter_location['d_oam_rate'] = dict_multiconverter_location['fix-cost'] / dict_multiconverter_location['inv-cost']
+        except ZeroDivisionError:
+            dict_multiconverter_location['d_oam_rate'] = 0.01*dict_multiconverter_location['inv-cost']
+
         return [list_start,
                 str_output,
                 str_conversion,
                 ['efficiency_new', '#type', 'DVP_linear', '#data', str(start_date), str(dict_multiconverter_location['efficiency_new'])],
                 ['cost', '#type', 'DVP_linear', '#data', str(start_date), str(dict_multiconverter_location['inv-cost']*1000)],
                 ['lifetime', '#type', 'DVP_linear', '#data', str(start_date), str(dict_multiconverter_location['depreciation'])],
-                ['OaM_rate', '#type', 'DVP_linear', '#data', str(start_date), str(dict_multiconverter_location['fix-cost']/float(dict_multiconverter_location['inv-cost']))],
+                ['OaM_rate', '#type', 'DVP_linear', '#data', str(start_date), str(dict_multiconverter_location['d_oam_rate'])],
                 ['#endblock']]
+
         #END-OF f_get_template_multiconverter
 
     try:
