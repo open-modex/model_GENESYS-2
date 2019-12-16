@@ -21,7 +21,7 @@ def f_import(*, dfs, scn, path):
 
     def f_get_template_region_general(dict_site, index):
         #generate reference to actual region file
-        return [['/include(./regions/' + dict_site['Name'] +'.csv)']]
+        return [['/include(./regions/' + dict_site['id'] +'.csv)']]
 
     with open(path+'/Region.csv', 'w') as writeFile:
         writer = csv.writer(writeFile, delimiter=";", lineterminator='\n')

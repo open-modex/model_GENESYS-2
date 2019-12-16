@@ -133,9 +133,9 @@ def f_import(*, dfs, scn, path, region_demand, start_date='2030-01-01_00:00'):
     #print("\tDEBUG: ",path)
 
     for index in dict_regions['Name']:
-      region_code = dict_regions['Name'][index]
+      region_code = dict_regions['id'][index]
       try:
-          with open(path+'/regions/'+dict_regions['Name'][index]+'.csv', 'w') as writeFile:
+          with open(path+'/regions/' + region_code + '.csv', 'w') as writeFile:
             writer = csv.writer(writeFile, delimiter=";", lineterminator='\n')
             #write demand rows in region parametrisation file
             writer.writerows(f_get_template_demand(region_code, f_get_region_demands(region_code, region_demand), start_date=start_date))
