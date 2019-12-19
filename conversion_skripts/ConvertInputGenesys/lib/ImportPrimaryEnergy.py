@@ -32,8 +32,8 @@ def f_import(dfs, scn, path, start_date='2030-01-01_00:00'):
                     ['#endtable'],
                     ['#endblock']]
         else:
-            return [['#code', df_m_input_commodity['Commodity'] + '_' + df_m_input_commodity['Site'], '#name',
-                     df_m_input_commodity['Commodity'] + '_' + df_m_input_commodity['Site']],
+            return [['#code', df_m_input_commodity['Commodity'].replace(" ", "_") + '_' + df_m_input_commodity['Site'].replace(" ", "_"), '#name',
+                     df_m_input_commodity['Commodity'].replace(" ", "_") + '_' + df_m_input_commodity['Site'].replace(" ", "_")],
                     ['cost_table', '#type', 'TBD_lookupTable'],
                     ['base', '#type', 'DVP_const', '#data',str(start_date), str(df_m_input_commodity['max'])],
                     ['value', '#type', 'DVP_const', '#data', str(start_date), str(df_m_input_commodity['price']*1000)],
