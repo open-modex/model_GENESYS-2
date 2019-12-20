@@ -104,7 +104,7 @@ def f_import(dfs, scn, path, start_date='2030-01-01_00:00'):
             [
                 [
                     '#comment',
-                    '===============Primary Energy===========================================',
+                    '{:=^73}'.format('Primary Energy'),
                 ]
             ]
         )
