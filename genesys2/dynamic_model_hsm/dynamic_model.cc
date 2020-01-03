@@ -557,6 +557,23 @@ void DynamicModel::setHSMCategoriesFromCode() {
   keyMap.emplace("converter_Pump_storage_North", dm_hsm::HSMCategory::LT_STORAGE);
   keyMap.emplace("converter_Pump_storage_South", dm_hsm::HSMCategory::LT_STORAGE);
 
+  keyMap.emplace("Lignite_plant_BB", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Hard_coal_plant_BB", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Natural_gas_plant_BB", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Oil_plant_BB", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Biomass_plant_BB", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Wind_power_plant_BB", dm_hsm::HSMCategory::RE_GENERATOR);
+  keyMap.emplace("Solar_power_plant_BB", dm_hsm::HSMCategory::RE_GENERATOR);
+  keyMap.emplace("Hydro_power_plant_BB", dm_hsm::HSMCategory::RE_GENERATOR);
+  keyMap.emplace("Lignite_plant_BE", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Hard_coal_plant_BE", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Natural_gas_plant_BE", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Oil_plant_BE", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Biomass_plant_BE", dm_hsm::HSMCategory::DISPATCHABLE_GENERATOR);
+  keyMap.emplace("Wind_power_plant_BE", dm_hsm::HSMCategory::RE_GENERATOR);
+  keyMap.emplace("Solar_power_plant_BE", dm_hsm::HSMCategory::RE_GENERATOR);
+  keyMap.emplace("Hydro_power_plant_BE", dm_hsm::HSMCategory::RE_GENERATOR);
+
   /* Heat Integrationsversuch: kja
   if(genesys::ProgramSettings::modules().find("heat")->second) {
     std::cout << "activated heat module: adding additional converters to hierarchy" << std::endl;
